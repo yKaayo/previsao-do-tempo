@@ -7,7 +7,7 @@ export default function WeatherInfo({ weather }) {
   }
 
   return (
-    <section className="flex flex-col items-center gap-5 mx-5 p-5 w-full rounded-md bg-slate-50 bg-opacity-50 mb-10">
+    <section className="section mb-10">
       <h2 className="text-3xl font-bold">{weather.name}</h2>
       <div className="flex items-center">
         <img

@@ -26,7 +26,7 @@ export default function App() {
 
   return (
     <main className="min-h-dvh bg-cyan-600">
-      <div className="flex flex-col items-center container mx-auto py-10">
+      <div className="flex flex-col items-center sm:container sm:mx-auto mx-5 py-10">
         <h1 className="mb-5 text-5xl text-slate-50 text-center">Previsão do Tempo</h1>
         <div className="mb-5">
           <input

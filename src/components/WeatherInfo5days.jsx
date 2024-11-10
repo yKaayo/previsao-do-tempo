@@ -23,13 +23,13 @@ export default function WeatherInfo5days({ weather5days }) {
   }
 
   return (
-    <section className="flex flex-col items-center gap-5 mx-5 p-10 w-full rounded-md bg-slate-50 bg-opacity-50">
+    <section className="section">
       <h2 className="text-3xl font-bold text-balance text-center">Previsão para os próximos 5 dias</h2>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] grid-flow-dense gap-5 w-full">
         {next5Days.map((forecast) => (
           <div
             key={forecast.dt}
-            className="flex flex-col items-center p-5 rounded-md bg-slate-50 bg-opacity-35"
+            className="section__card"
           >
             <p>{convertDate(forecast)}</p>
             <img
