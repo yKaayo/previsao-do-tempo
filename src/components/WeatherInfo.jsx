@@ -1,7 +1,5 @@
 /* eslint-disable react/prop-types */
 export default function WeatherInfo({ weather }) {
-  console.log(weather);
-
   function KelvinToCelsius(tempK) {
     return `${Math.round(Number(tempK) - 273.15)}°C`;
   }
@@ -17,10 +15,11 @@ export default function WeatherInfo({ weather }) {
         />
         <p className="text-5xl font-bold">
           {KelvinToCelsius(weather.main.temp)}
-          
         </p>
       </div>
-      <p className="capitalize font-semibold">{weather.weather[0].description}</p>
+      <p className="capitalize font-semibold">
+        {weather.weather[0].description}
+      </p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
         <p>Sensação Térmica: {KelvinToCelsius(weather.main.feels_like)}</p>
         <p>Umidade: {weather.main.humidity}%</p>
